@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Sobre Mim</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{url_for('home')}}">Meu portifólio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{url_for('sobre')}}">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{{url_for('projetos')}}">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{{url_for('contato')}}">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="margin-left: 20%; margin-right: 20%; text-align: justify;">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-body">Gustavo Dias Franco</h5>
+      </div>
+      <div class="offcanvas-body">
+        <p> Tenho 20 anos, atualmente estou cursando o 4º semestre de ciencia da computação. Apaixonado por programação especialmente em BackEnd, com alguns projetos criados como: Site funcional de um ecommerce e um gerenciador de acessos para áreas privadas. Atualmente estou desenvolvendo uma Newsletter inspirado em um criador de conteúdo que acompanho. </p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
